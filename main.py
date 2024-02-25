@@ -1,6 +1,10 @@
 import random
 
+<<<<<<< HEAD
 words = ['windows']
+=======
+words = ['cat', 'window', 'dog', ]
+>>>>>>> 4ef83d075b313010b23b322a6b85777cb7ea0faf
 word = random.choice(words)
 lword = []
 
@@ -24,3 +28,7 @@ while not guessed:
         guessed = True
         print('\nYou win!')
     print()
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4ef83d075b313010b23b322a6b85777cb7ea0faf
