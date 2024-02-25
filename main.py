@@ -1,6 +1,6 @@
 import random
 
-words = ['cat', 'window', 'dog', ]
+words = ['windows']
 word = random.choice(words)
 lword = []
 
