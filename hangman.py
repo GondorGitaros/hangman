@@ -2,23 +2,21 @@ import random
 
 words = ['window', 'cat', 'dog']
 word = random.choice(words)
+lword = []
 
-wordinl = []
 for i in range(len(word)):
     print('_', end='')
-    wordinl.append('_')
+    lword.append('_')
 print()
 
-guessed = False
-
-while not guessed:
-    guess = input('Guess: ')
+while True:
+    guess = input("guess: ")
     for i in range(len(word)):
-        if word[i] == guess:
-            wordinl[i] = guess
-    for i in wordinl:
+        if guess == word[i]:
+            lword[i] = guess
+    if '_' not in lword:
+        print('you won', end='')
+        break
+    for i in lword:
         print(i, end='')
     print()
-    if '_' not in wordinl:
-        print('YOU WON')
-        guessed = True
