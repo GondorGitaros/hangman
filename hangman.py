@@ -20,3 +20,5 @@ while True:
     for i in lword:
         print(i, end='')
     print()
+
+# end
